@@ -1,0 +1,102 @@
+﻿@page "/cfp"
+@inject HttpClient Http
+
+<NavMenu />
+
+<section class="platinum">
+    <header class="with-motif opal">
+        <h1>Call for Papers</h1>
+    </header>
+    <div>
+        <h2>2022 DevNxt Conference</h2>
+        <p>
+            DevNxt is a full day of respected and recognised technical leaders speaking on a range of topics that will apply to all levels 
+            of your business technology capability. From senior developers, architects, team leaders and team members aspiring to move into 
+            leadership roles (or even those who are unsure if it&rsquo;s the right thing for them), our speaker topics will provide a 
+            personal and insightful window into those next steps.
+        </p>
+        <p>
+            That&rsquo;s where you come in: We want to hear your experience, advice and recommendations in the software and technology field 
+            on topics related to team-building, mentoring, coaching, team culture, career tracks, inclusion &amp; diversity, generativity or 
+            any other similar discussion in the technology space.
+        </p>
+        <h3>Main Themes</h3>
+        <p>The central theme of DevNxt is around understanding the career and personal development ecosystem around you. Our broad sub-topics are:</p>
+        <ul>
+            <li>Career paths</li>
+            <li>Learning &amp; development</li>
+            <li>Mentorship &amp; coaching</li>
+            <li>Growing / strengthening a team</li>
+            <li>Culture / inclusion</li>
+        </ul>
+        <h3>Deadlines</h3>
+        <p>
+            In order for us to deliver a compelling, diverse and engaging programme of topics for our event this year, we need to ensure our 
+            attendees have a clear idea of what they&rsquo;ll learn before purchasing their ticket. The cut-off for proposals is therefore 
+            31 October, 2021. Successful topics will be confirmed by 12 November, 2021.
+        </p>
+        <p>
+            Talks and presentations requiring visual aids should be in an offline slide deck format such as Microsoft PowerPoint, Apple Keynote, 
+            Prezi or similar. Contact the event organisers for specific questions or advice.
+        </p>
+        <form>
+            <div class="form-control">
+                <label for="cfp-name">Name</label>
+                <input type="text" name="cfp-name" placeholder="Your name">
+            </div>
+            <div class="form-control">
+                <label for="cfp-title">Title</label>
+                <input type="text" name="cfp-title" placeholder="Title of talk">
+            </div>
+            <div class="form-control">
+                <label for="cfp-abstract">Abstract</label>
+                <textarea name="cfp-abstract" placeholder="Abstract"></textarea>
+            </div>
+            <div class="form-control">
+                <label for="cfp-affiliation">Affiliation</label>
+                <input type="text" name="cfp-affiliation" placeholder="Institution affiliation">
+            </div>
+            <div class="form-control">
+                <label for="cfp-email">Email</label>
+                <input type="email" name="cfp-email" placeholder="Email">
+            </div>
+            <div class="form-control">
+                <label for="cfp-profile">Professional profile</label>
+                <textarea name="cfp-profile" placeholder="A short professional profile"></textarea>
+            </div>
+            <div class="form-control">
+                <button type="submit">Submit proposal</button>
+            </div>
+        </form>
+        <div class="signatories" >
+            <p>
+                Phil Wheeler<br/>
+                phil@devnxt.nz
+            </p>
+            <p>
+                Peter Bayne<br/>
+                peter@devnxt.nz
+            </p>
+        </div>
+    </div>
+</section>
+
+@code {
+    private WeatherForecast[] forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+    }
+
+    public class WeatherForecast
+    {
+        public DateTime Date { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public string Summary { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+}
