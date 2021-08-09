@@ -39,7 +39,7 @@
             Talks and presentations requiring visual aids should be in an offline slide deck format such as Microsoft PowerPoint, Apple Keynote, 
             Prezi or similar. Contact the event organisers for specific questions or advice.
         </p>
-        <form>
+        <EditForm model="proposal" OnSubmit=@FormSubmitted>
             <div class="form-control">
                 <label for="cfp-name">Name</label>
                 <input type="text" name="cfp-name" placeholder="Your name">
@@ -67,7 +67,7 @@
             <div class="form-control">
                 <button type="submit">Submit proposal</button>
             </div>
-        </form>
+        </EditForm>
         <div class="signatories" >
             <p>
                 Phil Wheeler<br/>
@@ -82,21 +82,18 @@
 </section>
 
 @code {
-    private WeatherForecast[] forecasts;
+    private Proposal proposal = new Proposal();
 
     protected override async Task OnInitializedAsync()
     {
-        //forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
     }
 
-    public class WeatherForecast
+    void FormSubmitted(EditContext editContext)
     {
-        public DateTime Date { get; set; }
-
-        public int TemperatureC { get; set; }
-
-        public string Summary { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        bool formIsValid = editContext.Validate();
+        LastSubmitResult =
+            formIsValid
+            ? "Success - form was valid"
+            : "Failure - form was invalid";
     }
 }
