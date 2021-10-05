@@ -2,57 +2,65 @@
   {
     "name": "Laura Bell",
     "title": "CEO / Co-founder: SafeStack",
-    "social": "@LadyNerd",
+    "social": "@Lady_Nerd",
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/DevNxt-vertical-logo-black.png",
+    "companyLink": "https://academy.safestack.io/"
   },
   {
     "name": "Keoni Mahelona",
     "title": "CTO: Te Hiku Media",
     "social": "@mahelona",
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/DevNxt-vertical-logo-black.png",
+    "companyLink": "https://tehiku.nz/"    
   },
   {
     "name": "Cheryl Adams",
     "title": "CEO: Animation Research Limited",
     "social": "",
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/DevNxt-vertical-logo-black.png",
+    "companyLink": "https://arl.co.nz/"
   },
   {
     "name": "Lauren Peate",
     "title": "CEO / Founder: Multitudes",
     "social": "",
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/DevNxt-vertical-logo-black.png",
+    "companyLink": "https://www.multitudes.co/"
   },
   {
     "name": "Reuben Dunn",
     "title": "DevOps Consultant",
     "social": "@DefSol",
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/DevNxt-vertical-logo-black.png",
+    "companyLink": null
   },
   {
     "name": "Matthew Berrigan",
     "title": "CTO: Dexibit",
     "social": "",
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/DevNxt-vertical-logo-black.png",
+    "companyLink": "https://dexibit.com/"
   },
   {
     "name": "Ben Gracewood",
     "title": "",
-    "social": "@aotearoaben",
+    "social": "@aotearoa_ben",
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/DevNxt-vertical-logo-black.png",
+    "companyLink": null
   },
   {
     "name": "Rachel Weisz",
     "title": "Archaeology action hero",
     "social": "",
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/DevNxt-vertical-logo-black.png",
+    "companyLink": null
   }
 ]
