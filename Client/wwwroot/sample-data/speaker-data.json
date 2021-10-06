@@ -1,58 +1,122 @@
 [
   {
-    "name": "Laura Dern",
-    "title": "Dinosaur appreciator",
-    "social": "",
-    "bio": "Paleobotanist",
+    "name": "Laura Bell",
+    "title": "CEO / Co-founder: SafeStack",
+    "social": {
+      "type": "Twitter",
+      "handle":  "@LadyNerd"
+    },
+    "bio": "",
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
     "image": "/img/DevNxt-vertical-logo-black.png"
   },
   {
-    "name": "Tom Baker",
-    "title": "Timelord - 4th doctor",
-    "social": "",
-    "bio": "Gallifreyan native. Motivational speaker and galactic activist",
+    "name": "Keoni Mahelona",
+    "title": "CTO: Te Hiku Media",
+    "social": {
+      "type": "Twitter",
+      "handle":  "@mahelona"
+    },
+    "bio": "",
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
     "image": "/img/DevNxt-vertical-logo-black.png"
   },
   {
-    "name": "Person 3",
+    "name": "Cheryl Adams",
+    "title": "CEO: Animation Research Limited",
+    "social": {
+      "type": "",
+      "handle":  ""
+    },
+    "bio": "",
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
+  },
+  {
+    "name": "Lauren Peate",
+    "title": "CEO / Founder: Multitudes",
+    "social": {
+      "type": "Twitter",
+      "handle":  "@lmpeate"
+    },
+    "bio": "",
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
+  },
+  {
+    "name": "Reuben Dunn",
+    "title": "DevOps Consultant",
+    "social": {
+      "type": "Twitter",
+      "handle":  "@defsol"
+    },
+    "bio": "",
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
+  },
+  {
+    "name": "Matthew Berrigan",
+    "title": "CTO: Dexibit",
+    "social": {
+      "type": "",
+      "handle":  ""
+    },
+    "bio": "",
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
+  },
+  {
+    "name": "Ben Gracewood",
     "title": "",
-    "social": "",
-    "bio": "More speakers being announced soon",
+    "social": {
+      "type": "Twitter",
+      "handle":  "@aotearoaben"
+    },
+    "bio": "",
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
     "image": "/img/DevNxt-vertical-logo-black.png"
   },
   {
-    "name": "Person 4",
-    "title": "",
-    "social": "",
-    "bio": "More speakers being announced soon",
-    "image": "/img/DevNxt-vertical-logo-black.png"
-  },
-  {
-    "name": "Person 5",
-    "title": "",
-    "social": "",
-    "bio": "More speakers being announced soon",
-    "image": "/img/DevNxt-vertical-logo-black.png"
-  },
-  {
-    "name": "Person 6",
-    "title": "",
-    "social": "",
-    "bio": "More speakers being announced soon",
-    "image": "/img/DevNxt-vertical-logo-black.png"
-  },
-  {
-    "name": "Person 7",
-    "title": "",
-    "social": "",
-    "bio": "More speakers being announced soon",
-    "image": "/img/DevNxt-vertical-logo-black.png"
-  },
-  {
-    "name": "Person 8",
-    "title": "",
-    "social": "",
-    "bio": "More speakers being announced soon",
+    "name": "Rachel Weisz",
+    "title": "Archaeology action hero",
+    "social": {
+      "type": "",
+      "handle":  ""
+    },
+    "bio": "",
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
     "image": "/img/DevNxt-vertical-logo-black.png"
   }
 ]

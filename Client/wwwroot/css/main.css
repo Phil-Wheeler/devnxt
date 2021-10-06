@@ -11,11 +11,14 @@ footer a { color: inherit; }
 
 .speaker h3 { color: var(--platinum); }
 
-.byline { color: var(--platinum); font-size: 1.4em; font-weight: 500; text-align: end; }
+.byline { color: var(--platinum); font-size: 1.4em; font-weight: 500; }
+
+.small { }
+
 
 /* ====== STRUCTURE ====== */
-.page { display: grid; grid-auto-flow: row; grid-auto-rows: 100vh; }
-.speaker-grid { display: grid; justify-items: center; gap: 1em 2em; grid-template-columns: repeat(4, minmax(200px, 1fr)); margin: 0 auto; width: 67%; }
+.page { display: grid; grid-auto-flow: row; grid-auto-rows: minmax(100vh, min-content); }
+.speaker-grid { display: grid; justify-items: center; gap: 1em 2em; grid-template-columns: repeat(4, minmax(200px, 1fr)); margin: 0 auto; max-width: 82%; min-width: 67%; }
 
 nav { background-color: transparent; position: fixed; top: 0; width: 100%; z-index: 3; transition: background-color 1.25s linear; }
 nav ul { display: flex; flex-flow: row; justify-content: flex-end; list-style: none; gap: 1em; margin: 0; padding: 2em; }
@@ -35,11 +38,14 @@ footer { padding: 2em 2em 4em; }
 
 /* ====== UI LAYOUT ====== */
 body { margin: 0; }
-section.platinum { background-color: var(--platinum); }
-section.opal { background-color: var(--opal); }
-section > div { padding: 1em 2em; }
+section { display: flex; flex-flow: column; height: 100%; position: relative; }
+section.platinum { background-color: var(--platinum); color: var(--orange);}
+section.opal { background-color: var(--opal); color: var(--black); }
+section.orange { background-color: var(--orange); color: var(--platinum);}
+section.tab { background-color: var(--tan); color: var(--platinum);}
+section > div { color: var(--black); padding: 1em 2em; }
 
-.home {  justify-content: center; flex-flow: row;}
+.home { align-items: center; background-color: var(--opal); justify-content: center; flex-flow: column; gap: 2em; text-align: center; }
 .right-opal-box header { display: flex; justify-content: center; width: 74%; }
 .header-logo { width: 70%; }
 
@@ -49,21 +55,42 @@ nav.scroll { background-color: var(--platinum); }
 .right-opal-box { align-items: center; background: var(--opal-t); display: flex; width: 100%; z-index: 2; align-self: flex-end; height: 100%; flex-flow: column; padding: 10% 2em 0 2em; box-sizing: border-box;}
 .right-opal-box > div { display: flex; align-items: center; flex-flow: column; }
 
+p.jumbo{
+  margin: auto;
+  font-size: 2.2em;
+}
+
+p.strip { 
+  background-color: var(--platinum);
+  font-weight: 500;
+  margin-top: 2rem;
+  opacity: 0.67;
+  padding: 0.5rem;
+}
+
+section.home::before { align-items: center; background: transparent url('/img/home-bg-2.jpg') no-repeat 50% 0%; background-size: cover; content: ''; height: 100%; opacity: 0.25; position: absolute; width: 100%; z-index: 1; }
+section.home > header { margin-top: 4em; text-align: center; z-index: 2; }
+section.home > div { width: 50%; z-index: 2; }
+
+
 
 .opal { background-color: var(--opal); }
 .orange { background-color: var(--orange); }
 .platinum { background-color: var(--platinum); }
 .tan { background-color: var(--tan); }
+.tan-t { background-color: var(--tan-t); }
 
 .cta .button { background-color: var(--platinum);
-    border: 1px solid var(--opal);
+    border: 1px solid var(--platinum);
     border-radius: 4px;
     color: var(--orange);
-    font-size: 1em;
+    font-size: 16px;
     margin: 0.25em 0.5em;
     padding: .75em 1.25em;
     text-transform: uppercase;
-    font-family: 'Montserrat'; }
+    font-family: 'Montserrat'; 
+    font-weight: 400;
+  }
 
 /* primar CTA button should always be orange because behavioural science */
 .cta .button.primary{ background-color: var(--orange); color: var(--platinum);}  
@@ -81,6 +108,7 @@ nav.scroll { background-color: var(--platinum); }
 .with-motif.tan::before { background: transparent url('../img/DevNxt-conference-logo-platinum.png') no-repeat right top; background-size: contain; bottom: 0; content: ' '; height: 80%; position: absolute; right: 4em; width: 100%; }
 .with-motif.tan h1, .with-motif.tan h2 { color: var(--platinum); }
 
+.orange p.with-motif::before { background: transparent url('../img/DevNxt-conference-logo-platinum.png') no-repeat left center; background-size: 0.7em; top: 1em; content: ' '; height: 40%; position: absolute; right: 0em; width: 100%; }
 
 .speaker { position: relative; background-color: var(--opal); display: flex; flex-flow: column; justify-content: space-between; width: 240px; }
 .speaker h3, .speaker p { padding: 0 1em; }
@@ -94,10 +122,23 @@ nav.scroll { background-color: var(--platinum); }
 footer { color: var(--platinum); display: flex; justify-content: space-around; }
 .social ul, .links ul { list-style: none; }
 
-/* ------ FORMS ------ */
-input, textarea { border: 1px solid var(--opal); padding: 0.5em 0.75em; border-radius: 3px; box-shadow: 2px 2px 4px var(--opal); }
+/* .wordy {
+  columns: 2;
+}
+.wordy p{
+  font-size: 1em;
+  line-height: 1.6;
+  break-inside: avoid;
+} */
 
-
+.longform-text p { font-size: 1em; line-height: 1.54; break-inside: avoid; }
+.longform-text img { background-color: var(--white); float: right;
+  width: 40%;
+  margin: 0em;
+      margin-left: 0em;
+  border: 1px solid var(--opal-t);
+  padding: 0.5em;
+  margin-left: 1em; }
 
 /* ====== COLOURS ====== */
 :root {
@@ -106,25 +147,33 @@ input, textarea { border: 1px solid var(--opal); padding: 0.5em 0.75em; border-r
     --opal: rgb(163, 193, 198);
     --opal-t: rgba(163, 193, 198, 0.5);
     --tan: rgb(201, 150, 105);
+    --tan-t: rgba(201, 150, 105, 0.6);
     --black: rgb(0, 0, 0);
     --white: rgb(255, 255, 255);
 }
 
+@media screen and (min-width: 1339.99px) {
+  .speaker-grid { width: 80%; }
+}
 
 @media screen and (max-width: 1039.999px) {
     .speaker-grid { width: unset; }
     .speaker { width: 100%; }
 
     .right-opal-box{ padding-top: 40%; }
+    .wordy { columns: inherit; }
+
 }
 
 
 @media screen and (max-width: 438.95px) {
-    .page { grid-auto-rows: minmax(min-content, 67vh); }
+    .page { grid-auto-rows: minmax(min-content, 67vh) auto minmax(min-content, auto); }
     .speaker-grid { grid-template-columns: 82%; gap: 1em; justify-content: center; }
     .with-motif::before { right: 1.67em !important; }
 
-    .home { gap: 1em; }
+    .home { gap: 1em; align-items: center; }
+    section.home > header { width: 70%; margin-top: 4em; }
+    section.home > div { width: unset; }
 
     .header-logo { width: 100%; }
 
@@ -135,5 +184,5 @@ input, textarea { border: 1px solid var(--opal); padding: 0.5em 0.75em; border-r
     .speaker { width: 100%; }
     .speaker .box { width: 40%; }
 
-    .form-control { grid-template-columns: unset; gap: unset; }
+    .wordy { columns: inherit; }
 }
