@@ -116,6 +116,8 @@ section.home > div { width: 50%; z-index: 2; }
 .speaker .box { align-self: flex-start; background-color: var(--orange); max-width: 33%; padding: 2em 1em; position: relative; }
 .speaker img { width: 100%; }
 
+.sponsor { background-color: var(--platinum); border-radius: 3px; padding: 1rem 0.5rem; text-align: center; }
+
 .signatories { display: flex; justify-content: flex-end; gap: 2em; margin-right: 2em; }
 .signatories > p { font-weight: 500; }
 
