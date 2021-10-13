@@ -1,7 +1,8 @@
+
 <div class="speaker">
     <h3>@Presenting.Name</h3>
-    <p class="social"><a href="https://twitter.com/@Presenting.Social" target="_social">@Presenting.Social</a></p>
-    <p><a href="@Presenting.CompanyLink" target="_company">@Presenting.Title</a></p>
+    <p class="social"><a href="@FormatSocial(Presenting.Social)" target="_blank">@Presenting.Social.Handle</a></p>
+    <p>@Presenting.Title</p>
     <p>@Presenting.Bio</p>
     <div class="box">
         <img src="@Presenting.Image" alt="@Presenting.Name profile photo" />
@@ -13,5 +14,21 @@
     [Parameter]
     public Presenter Presenting { get; set; }
 
+    protected string FormatSocial (Social social){
+        // Let's assume we're working with Twitter if we have the @ symbol
+        switch (social.Type)
+        {
+            case "Twitter":
+                return $"https://twitter.com/{social.Handle.Substring(1)}";
+                break;
+            case "Facebook":
+                return $"https://www.facebook.com/{social.Handle}";
+                break;
+            default:
+                return "";
+                break;
+        }
+
+    }
 
 }

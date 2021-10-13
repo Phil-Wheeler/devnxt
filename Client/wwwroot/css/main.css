@@ -5,7 +5,7 @@ h1, .h1 { font: 500 2em/1.4 'Montserrat', sans-serif; }
 h2, .h2 { font: 500 1.33em/1.4 'Montserrat', sans-serif; }
 h3, .h3 { font: 300 1.2em/1.25 'Montserrat', sans-serif; }
 
-p, ul, li, blockquote { font: 300 0.82em/1.4 'Montserrat', sans-serif; }
+p, ul, li, blockquote, label, input, textarea { font: 300 0.82em/1.4 'Montserrat', sans-serif; }
 a { color: var(--orange); font: inherit; text-decoration: none; }
 footer a { color: inherit; }
 
@@ -28,7 +28,11 @@ nav a{ color: var(--platinum);}
 nav.scroll a{ color: var(--orange);}
 nav.scroll a.primary{ color: var(--white);}
 
+section { display: flex; flex-flow: column; height: 100%; overflow: hidden; }
 .cta { display: grid; grid-auto-flow: column; }
+
+form { display: flex; flex-flow: column; gap: 0.67em; }
+.form-control { display: grid; grid-template-columns: minmax(160px, min-content) auto; gap: 1em; }
 
 footer { padding: 2em 2em 4em; }
 
@@ -111,6 +115,8 @@ section.home > div { width: 50%; z-index: 2; }
 
 .speaker .box { align-self: flex-start; background-color: var(--orange); max-width: 33%; padding: 2em 1em; position: relative; }
 .speaker img { width: 100%; }
+
+.sponsor { background-color: var(--platinum); border-radius: 3px; padding: 1rem 0.5rem; text-align: center; }
 
 .signatories { display: flex; justify-content: flex-end; gap: 2em; margin-right: 2em; }
 .signatories > p { font-weight: 500; }

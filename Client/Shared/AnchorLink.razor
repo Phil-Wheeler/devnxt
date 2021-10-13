@@ -1,3 +1,4 @@
+@inject NavigationManager navMgr
 @code {
 
     public AnchorLink()
@@ -39,7 +40,9 @@
             // If the href attribute has been specified, we examine the value of it. If if starts with '#'
             // we assume the rest of the value contains the ID of the element the link points to.
             href = $"{this.Attributes["href"]}";
-            if (href.StartsWith("#"))
+            string path = navMgr.ToBaseRelativePath(navMgr.Uri);
+
+            if (href.StartsWith("#") && String.IsNullOrEmpty(path))
             {
                 // If the href contains an anchor link we don't want the default click action to occur, but
                 // rather take care of the click in our own method.

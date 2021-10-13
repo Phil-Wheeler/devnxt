@@ -2,65 +2,121 @@
   {
     "name": "Laura Bell",
     "title": "CEO / Co-founder: SafeStack",
-    "social": "@Lady_Nerd",
+    "social": {
+      "type": "Twitter",
+      "handle":  "@Lady_Nerd"
+    },
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png",
-    "companyLink": "https://academy.safestack.io/"
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
   },
   {
     "name": "Keoni Mahelona",
     "title": "CTO: Te Hiku Media",
-    "social": "@mahelona",
+    "social": {
+      "type": "Twitter",
+      "handle":  "@mahelona"
+    },
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png",
-    "companyLink": "https://tehiku.nz/"    
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
   },
   {
     "name": "Cheryl Adams",
     "title": "CEO: Animation Research Limited",
-    "social": "",
+    "social": {
+      "type": "",
+      "handle":  ""
+    },
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png",
-    "companyLink": "https://arl.co.nz/"
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
   },
   {
     "name": "Lauren Peate",
     "title": "CEO / Founder: Multitudes",
-    "social": "",
+    "social": {
+      "type": "Twitter",
+      "handle":  "@lmpeate"
+    },
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png",
-    "companyLink": "https://www.multitudes.co/"
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
   },
   {
     "name": "Reuben Dunn",
     "title": "DevOps Consultant",
-    "social": "@DefSol",
+    "social": {
+      "type": "Twitter",
+      "handle":  "@defsol"
+    },
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png",
-    "companyLink": null
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
   },
   {
     "name": "Matthew Berrigan",
     "title": "CTO: Dexibit",
-    "social": "",
+    "social": {
+      "type": "",
+      "handle":  ""
+    },
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png",
-    "companyLink": "https://dexibit.com/"
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
   },
   {
     "name": "Ben Gracewood",
     "title": "",
-    "social": "@aotearoa_ben",
+    "social": {
+      "type": "Twitter",
+      "handle":  "@aotearoaben"
+    },
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png",
-    "companyLink": null
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
   },
   {
-    "name": "Speaker Eight",
-    "title": "TBC",
-    "social": "",
+    "name": "Rachel Collingridge",
+    "title": "Head of Engineering: Xero",
+    "social": {
+      "type": "Twitter",
+      "handle":  "@missbassethorn"
+    },
     "bio": "",
-    "image": "/img/DevNxt-vertical-logo-black.png",
-    "companyLink": null
+    "talk": {
+      "title": "",
+      "abstract": "",
+      "order": 1
+    },
+    "image": "/img/DevNxt-vertical-logo-black.png"
   }
 ]

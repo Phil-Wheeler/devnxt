@@ -1,5 +1,6 @@
 ﻿@page "/"
 @inject HttpClient Http
+@inject Blazor.Analytics.IAnalytics Analytics
 
 <NavMenu />
 
@@ -51,7 +52,7 @@
     <div>
         <h2>Our Awesome Sponsors</h2>
         <div class="speaker-grid">
-
+            <Sponsor Title="Xero" Logo="xero-logo.png" Tier="Standard" />
         </div>
     </div>
 </section>
@@ -62,6 +63,7 @@
 
     protected override async Task OnInitializedAsync()
     {
+        await Analytics.TrackNavigation("~/");
         speakers = await Http.GetFromJsonAsync<Presenter[]>("sample-data/speaker-data.json");
     }
 
