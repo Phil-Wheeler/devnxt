@@ -80,6 +80,13 @@ section.home > div { width: 50%; z-index: 2; }
 .tan { background-color: var(--tan); }
 .tan-t { background-color: var(--tan-t); }
 
+.fg-opal { color: var(--opal) !important; }
+.fg-orange { color: var(--orange) !important; }
+.fg-platinum { color: var(--platinum) !important; }
+.fg-tan { color: var(--tan) !important; }
+.fg-tan-t { color: var(--tan-t) !important; }
+.fg-black { color: black !important; }
+
 .cta .button { background-color: var(--platinum);
     border: 1px solid var(--platinum);
     border-radius: 4px;
