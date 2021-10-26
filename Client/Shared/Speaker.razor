@@ -1,9 +1,9 @@
 
-<div class="speaker">
-    <h3>@Presenting.Name</h3>
-    <p class="social"><a href="@FormatSocial(Presenting.Social)" target="_blank">@Presenting.Social.Handle</a></p>
-    <p>@Presenting.Title</p>
-    <p>@Presenting.Bio</p>
+<div class="speaker" @onclick="ShowBio">
+    <div>
+        <h3>@Presenting.Name</h3>
+        <p>@Presenting.Title</p>
+    </div>
     <div class="box">
         <img src="@Presenting.Image" alt="@Presenting.Name profile photo" />
     </div>
@@ -14,21 +14,11 @@
     [Parameter]
     public Presenter Presenting { get; set; }
 
-    protected string FormatSocial (Social social){
-        // Let's assume we're working with Twitter if we have the @ symbol
-        switch (social.Type)
-        {
-            case "Twitter":
-                return $"https://twitter.com/{social.Handle.Substring(1)}";
-                break;
-            case "Facebook":
-                return $"https://www.facebook.com/{social.Handle}";
-                break;
-            default:
-                return "";
-                break;
-        }
+    [Parameter]
+    public EventCallback<string> OnShowBio { get; set; }
 
+    private async Task ShowBio(){
+        await OnShowBio.InvokeAsync(Presenting.Bio);
     }
 
 }

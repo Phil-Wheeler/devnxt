@@ -39,10 +39,16 @@
             else
             {
                 foreach(Presenter speaker in speakers){
-                    <Speaker Presenting=@speaker />
+                    <Speaker Presenting=@speaker OnShowBio=@ShowSpeakerBio  />
                 }
             }
         </div>
+        @if(ShowBio){
+            <div class="speaker-bio">
+                <SpeakerBio Speaker=activeSpeaker />
+                <button type="button" class="btn" @onclick=CloseBio>X</button>
+            </div>
+        }
     </div>
 </section>
 <section class="opal">
@@ -60,6 +66,8 @@
 
 @code {
     private Presenter[] speakers;
+    private Presenter activeSpeaker;
+    protected bool ShowBio = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -67,4 +75,16 @@
         speakers = await Http.GetFromJsonAsync<Presenter[]>("sample-data/speaker-data.json");
     }
 
+    private void ShowSpeakerBio(string Bio){
+        Console.WriteLine(Bio);
+        Console.WriteLine(Array.FindIndex(speakers, s => s.Bio == Bio));
+        int speakerIndex = Array.FindIndex(speakers, s => s.Bio == Bio);
+        activeSpeaker = speakers[speakerIndex];
+        ShowBio = true;
+    }
+
+    private void CloseBio(){
+        ShowBio = false;
+        activeSpeaker = null;
+    }
 }

@@ -1,0 +1,41 @@
+                <div>
+                    <figure>
+                        <img src="@Speaker.Image" />
+                    </figure>
+                    <h2>@Speaker.Name</h2>
+                    <p>
+                        @Speaker.Bio
+                    </p>
+                    <h3>Social Links</h3>
+                    <ul class="social">
+                        @foreach (Social soc in Speaker.Social)
+                        {
+                            <li><a href="@FormatSocial(soc)" target="_blank">@soc.Handle</a></li>
+                        }
+                    </ul>
+                </div>
+
+
+@code {
+    [Parameter]
+    public Presenter Speaker { get; set; }
+
+    protected string FormatSocial (Social social){
+
+        switch (social.Type)
+        {
+            case "Twitter":
+                return $"https://twitter.com/{social.Handle.Substring(1)}";
+            case "Facebook":
+                return $"https://www.facebook.com/{social.Handle}";
+            case "LinkedIn":
+                return $"https://www.linkedin.com/in/{social.Handle}";
+            default:
+                return "";
+        }
+
+        return String.Empty;
+    }
+
+
+}

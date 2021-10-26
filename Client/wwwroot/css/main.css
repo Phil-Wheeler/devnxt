@@ -13,12 +13,11 @@ footer a { color: inherit; }
 
 .byline { color: var(--platinum); font-size: 1.4em; font-weight: 500; }
 
-.small { }
 
 
 /* ====== STRUCTURE ====== */
 .page { display: grid; grid-auto-flow: row; grid-auto-rows: minmax(100vh, min-content); }
-.speaker-grid { display: grid; justify-items: center; gap: 1em 2em; grid-template-columns: repeat(4, minmax(200px, 1fr)); margin: 0 auto; max-width: 82%; min-width: 67%; }
+.speaker-grid { display: grid; justify-items: center; gap: 1em 2em; grid-template-columns: repeat(4, minmax(200px, 1fr)); grid-template-rows: repeat(2, minmax(320px, 1fr)); margin: 0 auto; max-width: 82%; min-width: 67%; }
 
 nav { background-color: transparent; position: fixed; top: 0; width: 100%; z-index: 3; transition: background-color 1.25s linear; }
 nav ul { display: flex; flex-flow: row; justify-content: flex-end; list-style: none; gap: 1em; margin: 0; padding: 2em; }
@@ -43,7 +42,8 @@ section.platinum { background-color: var(--platinum); color: var(--orange);}
 section.opal { background-color: var(--opal); color: var(--black); }
 section.orange { background-color: var(--orange); color: var(--platinum);}
 section.tab { background-color: var(--tan); color: var(--platinum);}
-section > div { color: var(--black); padding: 1em 2em; }
+section > div { color: var(--black); padding: 1em 2em; position: relative; }
+figure img { width: 100%; }
 
 .home { align-items: center; background-color: var(--opal); justify-content: center; flex-flow: column; gap: 2em; text-align: center; }
 .right-opal-box header { display: flex; justify-content: center; width: 74%; }
@@ -91,7 +91,8 @@ section.home > div { width: 50%; z-index: 2; }
     font-family: 'Montserrat'; 
     font-weight: 400;
   }
-
+.btn { border: 1px solid var(--platinum); border-radius: 4px; cursor: pointer; font: 400 16px/1.2 'Montserrat', sans-serif; padding: .75em 1.25em; }
+.btn.primary, button.primary { background-color: var(--orange); color: var(--platinum); }
 /* primar CTA button should always be orange because behavioural science */
 .cta .button.primary{ background-color: var(--orange); color: var(--platinum);}  
 
@@ -111,7 +112,7 @@ section.home > div { width: 50%; z-index: 2; }
 .orange p.with-motif::before { background: transparent url('../img/DevNxt-conference-logo-platinum.png') no-repeat left center; background-size: 0.7em; top: 1em; content: ' '; height: 40%; position: absolute; right: 0em; width: 100%; }
 
 .speaker { position: relative; background-color: var(--opal); display: flex; flex-flow: column; justify-content: space-between; width: 240px; }
-.speaker h3, .speaker p { padding: 0 1em; }
+.speaker h3, .speaker p { padding: 0 1rem; }
 
 .speaker .box { align-self: flex-start; background-color: var(--orange); max-width: 33%; padding: 2em 1em; position: relative; }
 .speaker img { width: 100%; }
@@ -122,17 +123,19 @@ section.home > div { width: 50%; z-index: 2; }
 .signatories > p { font-weight: 500; }
 
 footer { color: var(--platinum); display: flex; justify-content: space-around; }
-.social ul, .links ul { list-style: none; }
+.social, .social ul, .links ul { list-style: none; padding: 0; }
+.social li { font-size: unset; font-weight: bold; }
 .speaker a { color: var(--black); }
 
-/* .wordy {
-  columns: 2;
-}
-.wordy p{
-  font-size: 1em;
-  line-height: 1.6;
-  break-inside: avoid;
-} */
+
+.speaker-bio { position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--opal);
+  left: 0;
+  top: 0; }
+.speaker-bio > div { margin: 0 auto; padding: 2rem; width: 86%; }
+.speaker-bio figure { float: right; width: 20%; }
 
 .longform-text p { font-size: 1em; line-height: 1.54; break-inside: avoid; }
 .longform-text img { background-color: var(--white); float: right;
