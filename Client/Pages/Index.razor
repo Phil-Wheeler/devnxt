@@ -43,12 +43,7 @@
                 }
             }
         </div>
-        @if(ShowBio){
-            <div class="speaker-bio">
-                <SpeakerBio Speaker=activeSpeaker />
-                <button type="button" class="btn" @onclick=CloseBio>X</button>
-            </div>
-        }
+            
     </div>
 </section>
 <section class="opal">
@@ -75,10 +70,8 @@
         speakers = await Http.GetFromJsonAsync<Presenter[]>("sample-data/speaker-data.json");
     }
 
-    private void ShowSpeakerBio(string Bio){
-        Console.WriteLine(Bio);
-        Console.WriteLine(Array.FindIndex(speakers, s => s.Bio == Bio));
-        int speakerIndex = Array.FindIndex(speakers, s => s.Bio == Bio);
+    private void ShowSpeakerBio(string Name){
+        int speakerIndex = Array.FindIndex(speakers, s => s.Name == Name);
         activeSpeaker = speakers[speakerIndex];
         ShowBio = true;
     }

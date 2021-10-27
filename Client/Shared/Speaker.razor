@@ -7,6 +7,14 @@
     <div class="box">
         <img src="@Presenting.Image" alt="@Presenting.Name profile photo" />
     </div>
+
+            @if(DisplayBio){
+            <div class="speaker-bio">
+                <SpeakerBio Speaker=Presenting />
+                <button type="button" class="btn" @onclick=CloseBio>X</button>
+            </div>
+        }
+
 </div>
 
 @code {
@@ -17,8 +25,19 @@
     [Parameter]
     public EventCallback<string> OnShowBio { get; set; }
 
-    private async Task ShowBio(){
-        await OnShowBio.InvokeAsync(Presenting.Bio);
+    protected bool DisplayBio = false;
+
+    @* private async Task ShowBio(){
+        await OnShowBio.InvokeAsync(Presenting.Name);
+    } *@
+    private void ShowBio(){
+        //int speakerIndex = Array.FindIndex(speakers, s => s.Name == Name);
+        //activeSpeaker = speakers[speakerIndex];
+        DisplayBio = true;
     }
 
+    private void CloseBio(){
+        DisplayBio = false;
+        //activeSpeaker = null;
+    }
 }

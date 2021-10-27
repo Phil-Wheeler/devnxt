@@ -170,7 +170,7 @@ footer { color: var(--platinum); display: flex; justify-content: space-around; }
 }
 
 @media screen and (max-width: 1039.999px) {
-    .speaker-grid { width: unset; }
+    .speaker-grid { max-width: unset; width: unset; }
     .speaker { width: 100%; }
 
     .right-opal-box{ padding-top: 40%; }
@@ -196,6 +196,8 @@ footer { color: var(--platinum); display: flex; justify-content: space-around; }
 
     .speaker { width: 100%; }
     .speaker .box { width: 40%; }
+
+    .speaker-bio { position: fixed; z-index: 5; }
 
     .wordy { columns: inherit; }
 }
