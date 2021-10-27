@@ -135,13 +135,13 @@ footer { color: var(--platinum); display: flex; justify-content: space-around; }
 .speaker a { color: var(--black); }
 
 
-.speaker-bio { position: absolute;
+.speaker-bio { position: fixed;
   width: 100%;
   height: 100%;
   background-color: var(--opal);
   left: 0;
-  top: 0; }
-.speaker-bio > div { margin: 0 auto; padding: 2rem; width: 86%; }
+  top: 0; z-index: 5; }
+.speaker-bio > div { margin: 0 auto; padding: 2rem; width: 67%; }
 .speaker-bio figure { float: right; width: 20%; }
 
 .longform-text p { font-size: 1em; line-height: 1.54; break-inside: avoid; }
