@@ -112,10 +112,10 @@
       "type": "Twitter",
       "handle":  "@aotearoaben"
     }],
-    "bio": "Here is an extensive bio",
+    "bio": "Ben has a couple of decades of experience building and running high-performance software engineering teams at places like Vend, Westpac, and Datacom. There's some evidence that his approach works to build strong, inclusive cultures. Ben also co-founded the Codemania software developer conference.",
     "talk": {
       "title": "",
-      "abstract": "",
+      "abstract": "Gosh it's hard hiring and retaining great technical people in the current environment eh? I don't have any secret solutions, but I will share some specific tools and techniques have worked for me in the past; and also lean into some tough conversations around the work we need to do as leaders. Ideally this information will help you hire great people and implement an enduring culture in your engineering team.",
       "order": 1
     },
     "image": "/img/DevNxt-vertical-logo-black.png"
