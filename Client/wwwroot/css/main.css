@@ -209,6 +209,7 @@ footer { color: var(--platinum); display: flex; justify-content: space-around; }
     .speaker .box { width: 40%; }
 
     .speaker-bio { position: fixed; z-index: 5; }
+    .at-top-for-small { position: absolute; top: 0.5em; left: 0.5em; font-size: 0.8em; }
 
     .wordy { columns: inherit; }
 }
