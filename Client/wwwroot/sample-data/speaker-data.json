@@ -2,10 +2,10 @@
   {
     "name": "Laura Bell",
     "title": "CEO / Co-founder: SafeStack",
-    "social": {
+    "social": [{
       "type": "Twitter",
       "handle":  "@Lady_Nerd"
-    },
+    }],
     "bio": "",
     "talk": {
       "title": "",
@@ -17,10 +17,10 @@
   {
     "name": "Keoni Mahelona",
     "title": "CTO: Te Hiku Media",
-    "social": {
+    "social": [{
       "type": "Twitter",
       "handle":  "@mahelona"
-    },
+    }],
     "bio": "",
     "talk": {
       "title": "",
@@ -32,11 +32,11 @@
   {
     "name": "Cheryl Adams",
     "title": "CEO: Animation Research Limited",
-    "social": {
-      "type": "",
-      "handle":  ""
-    },
-    "bio": "",
+    "social": [{
+      "type": "LinkedIn",
+      "handle":  "cheryl-adams-a1b6288"
+    }],
+    "bio": "Being the CEO of Animation Research Limited, one of Australasia's leading Computer Graphics production houses, seemed an unlikely career choice for Cheryl Adams when she was grubbing thistles on her parent's farm.  After all, she was going to be an accountant, until a calculus teacher suggested she'd get bored and advised her to head to engineering school.  Cheryl's journey from mechanical engineer through the energy sector and into award winning computer graphics, is a story of practical empathy, and proves the wisdom of her calculus teacher:  her life is far from boring. ",
     "talk": {
       "title": "",
       "abstract": "",
@@ -47,11 +47,15 @@
   {
     "name": "Lauren Peate",
     "title": "CEO / Founder: Multitudes",
-    "social": {
+    "social": [{
       "type": "Twitter",
       "handle":  "@lmpeate"
     },
-    "bio": "",
+    {
+      "type": "LinkedIn",
+      "handle": "lpeate"
+    }],
+    "bio": "Lauren Peate is the CEO and founder of Multitudes, a tool for engineering leaders who care about culture. The product integrates with GitHub to provide insights and recommendations to build happier, higher-performing teams. Before founding Multitudes, she founded and ran a DEI consultancy called Ally Skills NZ, worked at Bain & Co with Fortune 500 tech companies in San Francisco, advised startups across the Middle East, and was a Fulbright Scholar in Morocco. Lauren studied economics with minors in Arabic and Human Biology at Stanford University.",
     "talk": {
       "title": "",
       "abstract": "",
@@ -62,26 +66,38 @@
   {
     "name": "Reuben Dunn",
     "title": "DevOps Consultant",
-    "social": {
+    "social": [{
       "type": "Twitter",
       "handle":  "@defsol"
     },
-    "bio": "",
+    {
+      "type": "LinkedIn",
+      "handle": "defsol"
+    },
+    {
+      "type": "Instagram",
+      "handle": "DefSolNz"
+    },
+    {
+      "type": "Github",
+      "handle": "DefSol"
+    }],
+    "bio": "Reuben helps teams and organisations to apply better DevOps stories to build new software and product capabilities and is currently working with some fantastic people at Hypr (www.hypr.nz). Reuben is the founder and lead organiser of the DevOpsDaysNZ conference, with four highly successful events from 2016-2019 in Auckland & Wellington. Reuben lives in Auckland’s Rural South East with his wife, four kids, six sheep and two dogs, enjoys watching various sports, and has relished coaching his son’s rugby teams for the past ten years. You can reach him on the socials via his DefSol handle. Ngā Puhi/Ngati Pikiao/Tainui.",
     "talk": {
-      "title": "",
-      "abstract": "",
+      "title": "Prototype Your Life",
+      "abstract": "My topic is around a concept I call prototype your life – where you probe your peers currently in that role to see if it’s really what you think it is. Another dimension (unsure if this relates) is that skills obtained within the technical space may open previously unrelated roles/opportunities.",
       "order": 1
     },
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/speakers/reuben-dunn.jpg"
   },
   {
     "name": "Matthew Berrigan",
-    "title": "CTO: Dexibit",
-    "social": {
+    "title": "Technical Director, Take2 NZ",
+    "social": [{
       "type": "",
       "handle":  ""
-    },
-    "bio": "",
+    }],
+    "bio": "After an academic start in Science (Chemistry), I entered the IT Tech Industry as a Junior Developer with a Graduate Diploma in Computer Science. During my 25 career, I have worked in Development teams, Research Teams and Architecture Teams, before I started leading teams and made this a special focus. My particular delight in leading people is the art of trying to maximise human potential. I try to match the complex nature of who we are and how we respond to our environment against the needs for process, efficiency and optimisation. The more we press against machines, fuse with machines or hold machines up to our faces like a mirror, we discover our nature - or at least we try. I am transgender, still active and a passionate advocate in the Women in Technology scene and still hands on in software development. My current role now includes the chance for human transformation, the nature of redemption and the value, potency and evolving delivery of education. Combining this with business, I will bring a range of open ended topics to this conference, bound to pique curiosity or perhaps push against convention but always couched in my desire for collaborative discovery and sharing.",
     "talk": {
       "title": "",
       "abstract": "",
@@ -91,15 +107,15 @@
   },
   {
     "name": "Ben Gracewood",
-    "title": "",
-    "social": {
+    "title": "CTO: The Spinoff",
+    "social": [{
       "type": "Twitter",
       "handle":  "@aotearoaben"
-    },
-    "bio": "",
+    }],
+    "bio": "Ben has a couple of decades of experience building and running high-performance software engineering teams at places like Vend, Westpac, and Datacom. There's some evidence that his approach works to build strong, inclusive cultures. Ben also co-founded the Codemania software developer conference.",
     "talk": {
       "title": "",
-      "abstract": "",
+      "abstract": "Gosh it's hard hiring and retaining great technical people in the current environment eh? I don't have any secret solutions, but I will share some specific tools and techniques have worked for me in the past; and also lean into some tough conversations around the work we need to do as leaders. Ideally this information will help you hire great people and implement an enduring culture in your engineering team.",
       "order": 1
     },
     "image": "/img/DevNxt-vertical-logo-black.png"
@@ -107,10 +123,10 @@
   {
     "name": "Rachel Collingridge",
     "title": "Head of Engineering: Xero",
-    "social": {
+    "social": [{
       "type": "Twitter",
       "handle":  "@missbassethorn"
-    },
+    }],
     "bio": "",
     "talk": {
       "title": "",

@@ -1,12 +1,20 @@
 
-<div class="speaker">
-    <h3>@Presenting.Name</h3>
-    <p class="social"><a href="@FormatSocial(Presenting.Social)" target="_blank">@Presenting.Social.Handle</a></p>
-    <p>@Presenting.Title</p>
-    <p>@Presenting.Bio</p>
-    <div class="box">
-        <img src="@Presenting.Image" alt="@Presenting.Name profile photo" />
+<div class="speaker" @onclick="ShowBio">
+    <div>
+        <h3>@Presenting.Name</h3>
+        <p>@Presenting.Title</p>
     </div>
+    <div class="box">
+        <img src="/img/DevNxt-vertical-logo-black.png" alt="conference logo" />
+    </div>
+
+            @if(DisplayBio){
+            <div class="speaker-bio">
+                <SpeakerBio Speaker=Presenting />
+                <button type="button" class="btn" @onclick=CloseBio>X</button>
+            </div>
+        }
+
 </div>
 
 @code {
@@ -14,21 +22,22 @@
     [Parameter]
     public Presenter Presenting { get; set; }
 
-    protected string FormatSocial (Social social){
-        // Let's assume we're working with Twitter if we have the @ symbol
-        switch (social.Type)
-        {
-            case "Twitter":
-                return $"https://twitter.com/{social.Handle.Substring(1)}";
-                break;
-            case "Facebook":
-                return $"https://www.facebook.com/{social.Handle}";
-                break;
-            default:
-                return "";
-                break;
-        }
+    [Parameter]
+    public EventCallback<string> OnShowBio { get; set; }
 
+    protected bool DisplayBio = false;
+
+    @* private async Task ShowBio(){
+        await OnShowBio.InvokeAsync(Presenting.Name);
+    } *@
+    private void ShowBio(){
+        //int speakerIndex = Array.FindIndex(speakers, s => s.Name == Name);
+        //activeSpeaker = speakers[speakerIndex];
+        DisplayBio = true;
     }
 
+    private void CloseBio(){
+        DisplayBio = false;
+        //activeSpeaker = null;
+    }
 }

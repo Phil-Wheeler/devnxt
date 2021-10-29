@@ -7,7 +7,7 @@
 <section class="home" id="home-section">
       <header>
           <img src="/img/DevNxt-logo-orange.png" alt="DevNxt conference logo" class="header-logo">
-          <p class="strip">May 6 2022 <br/> Dunedin NZ</p>
+          <p class="strip sash">May 6 2022 <br/> Dunedin NZ</p>
       </header>
       <div>
           <p class="byline">
@@ -39,10 +39,11 @@
             else
             {
                 foreach(Presenter speaker in speakers){
-                    <Speaker Presenting=@speaker />
+                    <Speaker Presenting=@speaker OnShowBio=@ShowSpeakerBio  />
                 }
             }
         </div>
+            
     </div>
 </section>
 <section class="opal">
@@ -60,6 +61,8 @@
 
 @code {
     private Presenter[] speakers;
+    private Presenter activeSpeaker;
+    protected bool ShowBio = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -67,4 +70,14 @@
         speakers = await Http.GetFromJsonAsync<Presenter[]>("sample-data/speaker-data.json");
     }
 
+    private void ShowSpeakerBio(string Name){
+        int speakerIndex = Array.FindIndex(speakers, s => s.Name == Name);
+        activeSpeaker = speakers[speakerIndex];
+        ShowBio = true;
+    }
+
+    private void CloseBio(){
+        ShowBio = false;
+        activeSpeaker = null;
+    }
 }
