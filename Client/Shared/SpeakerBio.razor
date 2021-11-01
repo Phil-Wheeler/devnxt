@@ -4,7 +4,7 @@
                     </figure>
                     <h2>@Speaker.Name</h2>
                     <p>
-                        @Speaker.Bio
+                        @((MarkupString)Speaker.Bio)
                     </p>
                     <h3>Social Links</h3>
                     <ul class="social">
@@ -37,8 +37,6 @@
             default:
                 return "";
         }
-
-        return String.Empty;
     }
 
 

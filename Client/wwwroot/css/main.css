@@ -151,7 +151,7 @@ footer { color: var(--platinum); display: flex; justify-content: space-around; }
   left: 0;
   top: 0; z-index: 5; }
 .speaker-bio > div { margin: 0 auto; padding: 2rem; width: 67%; }
-.speaker-bio figure { float: right; width: 20%; }
+.speaker-bio figure { float: right; width: 20%; border-radius: 3px; padding: 0.5em; background-color: var(--platinum); display: flex; }
 
 .longform-text p { font-size: 1em; line-height: 1.54; break-inside: avoid; }
 .longform-text img { background-color: var(--white); float: right;
