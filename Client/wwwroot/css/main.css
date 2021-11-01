@@ -17,7 +17,7 @@ footer a { color: inherit; }
 
 
 /* ====== STRUCTURE ====== */
-.page { display: grid; grid-auto-flow: row; grid-auto-rows: minmax(100vh, min-content); }
+.page { display: grid; grid-auto-flow: row; grid-auto-rows: minmax(60vh, min-content); }
 .speaker-grid { display: grid; justify-items: center; gap: 1em 2em; grid-template-columns: repeat(4, minmax(200px, 1fr)); grid-template-rows: repeat(2, minmax(320px, 1fr)); margin: 0 auto; max-width: 82%; min-width: 67%; }
 
 nav { background-color: transparent; position: fixed; top: 0; width: 100%; z-index: 3; transition: background-color 1.25s linear; }
@@ -46,7 +46,7 @@ section.tab { background-color: var(--tan); color: var(--platinum);}
 section > div { color: var(--black); padding: 1em 2em; position: relative; }
 figure img { width: 100%; }
 
-.home { align-items: center; background-color: var(--opal); justify-content: center; flex-flow: column; gap: 2em; text-align: center; }
+.home { align-items: center; background-color: var(--opal); justify-content: center; flex-flow: column; gap: 2em; height: 100vh; text-align: center; }
 .right-opal-box header { display: flex; justify-content: center; width: 74%; }
 .header-logo { width: 70%; }
 
@@ -162,6 +162,17 @@ footer { color: var(--platinum); display: flex; justify-content: space-around; }
   padding: 0.5em;
   margin-left: 1em; }
 
+
+.animated { animation-duration: 1.33s; animation-fill-mode: both; animation-iteration-count: 10; }
+.bounce { animation-name: bounce; }
+@keyframes bounce { 
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+.carat { bottom: 2rem; color: var(--orange); font: 700 4rem/0.25 'Montserrat', sans-serif; margin: 0; position: absolute; }
+
+
 /* ====== COLOURS ====== */
 :root {
     --platinum: rgb(239, 239, 239);
@@ -181,9 +192,14 @@ footer { color: var(--platinum); display: flex; justify-content: space-around; }
 @media screen and (max-width: 1039.999px) {
     .speaker-grid { max-width: unset; width: unset; }
     .speaker { width: 100%; }
+    section:nth-of-type(2) ~ section { padding-bottom: 5rem; }
+
+    .sash { left: -7rem; top: 7rem; width: 50%; }
 
     .right-opal-box{ padding-top: 40%; }
     .wordy { columns: inherit; }
+
+    footer { margin-top: 5rem; }
 
 }
 
