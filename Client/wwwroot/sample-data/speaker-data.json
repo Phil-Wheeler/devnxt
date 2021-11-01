@@ -118,7 +118,7 @@
       "abstract": "Gosh it's hard hiring and retaining great technical people in the current environment eh? I don't have any secret solutions, but I will share some specific tools and techniques have worked for me in the past; and also lean into some tough conversations around the work we need to do as leaders. Ideally this information will help you hire great people and implement an enduring culture in your engineering team.",
       "order": 1
     },
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/speakers/ben-gracewood.jpg"
   },
   {
     "name": "Rachel Collingridge",
@@ -127,12 +127,12 @@
       "type": "Twitter",
       "handle":  "@missbassethorn"
     }],
-    "bio": "",
+    "bio": "Rachel Collingridge is a classically trained musician who was accidentally drawn into software development in the late 1990s. After 18 years of crafting code, mainly for large UK institutions, she transitioned to a “post-technical” phase of engineering leadership at Powershop. She joined Xero in 2018. <br />Rachel believes engineer happiness is a key predictor of customer happiness and business success. Yet nurturing happiness requires more than espresso machines and high-res monitors! Rachel is motivated by creating environments built on coaching for growth, and modern DevOps practices; an environment where engineers can deliver high quality, relevant software both frequently and sustainably.<br /> Outside of the office she enjoys long trail runs with her husband and Jasper the rescue dog, spending time with her children before they fly the nest, and an occasional toot on a saxophone or clarinet.",
     "talk": {
       "title": "",
       "abstract": "",
       "order": 1
     },
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/speakers/rachel-collingridge.jpg"
   }
 ]
