@@ -170,7 +170,7 @@ footer { color: var(--platinum); display: flex; justify-content: space-around; }
   40% {transform: translateY(-30px);}
   60% {transform: translateY(-15px);}
 }
-.carat { bottom: 2rem; color: var(--orange); font: 700 4rem/0.25 'Montserrat', sans-serif; margin: 0; position: absolute; }
+.carat { bottom: 2rem; color: var(--orange); font: 700 4rem/0.25 'Montserrat', sans-serif; margin: 0; padding: 0; position: absolute; }
 
 
 /* ====== COLOURS ====== */
