@@ -29,7 +29,7 @@ nav.scroll a{ color: var(--orange);}
 nav.scroll a.primary{ color: var(--white);}
 
 section { display: flex; flex-flow: column; height: 100%; overflow: hidden; }
-.cta { display: grid; grid-auto-flow: column; }
+.cta { display: flex; justify-content: center; }
 
 form { display: flex; flex-flow: column; gap: 0.67em; }
 .form-control { display: grid; grid-template-columns: minmax(160px, min-content) auto; gap: 1em; }

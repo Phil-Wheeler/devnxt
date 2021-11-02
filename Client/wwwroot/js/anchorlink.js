@@ -5,7 +5,18 @@ window.anchorLink = {
         // element into view, if an element is found.
         var elem = document.getElementById(elementId);
         if (elem) {
-            elem.scrollIntoView();
+            var headerOffset = 140;
+            var elementPosition = elem.getBoundingClientRect().top;
+            var offsetPosition = elementPosition - headerOffset;
+
+            console.debug(elem.getBoundingClientRect().top);
+            console.debug(offsetPosition);
+        
+            window.scrollTo({
+                 top: offsetPosition,
+                 behavior: "smooth"
+            });
+            
             window.location.hash = elementId;
         }
     }
