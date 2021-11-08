@@ -10,7 +10,9 @@
         <h1>@(speaker.DisplayName == String.Empty ? speaker.Name : speaker.DisplayName)</h1>
     </header>
     <div>
-        <img src="@speaker.Image" />
+        <figure class="profile-photo">
+            <img src="@speaker.Image" />
+        </figure>
         <p>@speaker.Bio</p>
     </div>
 </section>
