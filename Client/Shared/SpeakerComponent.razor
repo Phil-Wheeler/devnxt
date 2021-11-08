@@ -1,17 +1,14 @@
 
 
-<div class="speaker">
-    <a href="/speaker/@Presenting.Name.Replace(" ","-")">
+<a class="speaker" href="/speaker/@Presenting.Name.Replace(" ","-")">
     <div>
         <h3>@Presenting.Name</h3>
-        <p>@Presenting.Title</p>
+        <p class="fg-black">@Presenting.Title</p>
     </div>
-    </a>
     <div class="box">
-        <img src="/img/DevNxt-vertical-logo-black.png" alt="conference logo" />
+        <img src="@Presenting.Image" alt="conference logo" />
     </div>
-
-</div>
+</a>
 
 @code {
 
