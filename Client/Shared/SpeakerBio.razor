@@ -2,7 +2,7 @@
                     <figure>
                         <img src="@Speaker.Image" />
                     </figure>
-                    <h2>@Speaker.Name</h2>
+                    <h2>@(Speaker.DisplayName == String.Empty ? Speaker.Name : Speaker.DisplayName)</h2>
                     <p>
                         @((MarkupString)Speaker.Bio)
                     </p>

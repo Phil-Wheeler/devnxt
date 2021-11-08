@@ -1,0 +1,37 @@
+@page "/speaker/{name}"
+@inject HttpClient Http
+@inject Blazor.Analytics.IAnalytics Analytics
+
+<NavMenu />
+
+
+<section id="taglinesection" class="platinum" >
+    <header id="speakers" class="with-motif opal">
+        <h1>@(speaker.DisplayName == String.Empty ? speaker.Name : speaker.DisplayName)</h1>
+    </header>
+    <div>
+        <img src="@speaker.Image" />
+        <p>@speaker.Bio</p>
+    </div>
+</section>
+
+
+
+
+@code {
+
+    [Parameter]
+    public string Name { get; set; }
+
+    Presenter speaker = new Presenter();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        //await Analytics.TrackNavigation("~/speaker");
+        var speakers = await Http.GetFromJsonAsync<Presenter[]>("sample-data/speaker-data.json");
+
+        speaker = speakers[Array.FindIndex(speakers, s => s.Name == Name.Replace("-"," "))];
+    }
+
+}

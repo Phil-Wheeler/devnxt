@@ -1,6 +1,7 @@
 [
   {
     "name": "Laura Bell",
+    "displayname": "",
     "title": "CEO / Co-founder: SafeStack",
     "social": [{
       "type": "Twitter",
@@ -16,6 +17,7 @@
   },
   {
     "name": "Keoni Mahelona",
+    "displayname": "",
     "title": "CTO: Te Hiku Media",
     "social": [{
       "type": "Twitter",
@@ -31,6 +33,7 @@
   },
   {
     "name": "Cheryl Adams",
+    "displayname": "Cheryl",
     "title": "CEO: Animation Research Limited",
     "social": [{
       "type": "LinkedIn",
@@ -42,10 +45,11 @@
       "abstract": "",
       "order": 1
     },
-    "image": "/img/DevNxt-vertical-logo-black.png"
+    "image": "/img/speakers/cheryl-adams.jpg"
   },
   {
     "name": "Lauren Peate",
+    "displayname": "",
     "title": "CEO / Founder: Multitudes",
     "social": [{
       "type": "Twitter",
@@ -65,6 +69,7 @@
   },
   {
     "name": "Reuben Dunn",
+    "displayname": "",
     "title": "DevOps Consultant",
     "social": [{
       "type": "Twitter",
@@ -92,6 +97,7 @@
   },
   {
     "name": "Matthew Berrigan",
+    "displayname": "",
     "title": "Technical Director, Take2 NZ",
     "social": [{
       "type": "",
@@ -107,6 +113,7 @@
   },
   {
     "name": "Ben Gracewood",
+    "displayname": "",
     "title": "CTO: The Spinoff",
     "social": [{
       "type": "Twitter",
@@ -122,6 +129,7 @@
   },
   {
     "name": "Rachel Collingridge",
+    "displayname": "",
     "title": "Head of Engineering: Xero",
     "social": [{
       "type": "Twitter",

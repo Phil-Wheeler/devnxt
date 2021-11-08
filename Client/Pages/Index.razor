@@ -39,7 +39,7 @@
             else
             {
                 foreach(Presenter speaker in speakers){
-                    <Speaker Presenting=@speaker OnShowBio=@ShowSpeakerBio  />
+                    <SpeakerComponent Presenting=@speaker OnShowBio=@ShowSpeakerBio  />
                 }
             }
         </div>
@@ -53,6 +53,7 @@
     <div>
         <h2>Our Awesome Sponsors</h2>
         <div class="speaker-grid">
+            <Sponsor Title="Pushpay" Logo="pushpay-logo-stacked.png" Tier="Silver" />
             <Sponsor Title="Xero" Logo="xero-logo.png" Tier="Standard" />
         </div>
     </div>

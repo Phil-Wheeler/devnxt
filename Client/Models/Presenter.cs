@@ -3,6 +3,7 @@ using System;
 public class Presenter
 {
     public String Name { get; set; }
+    public String DisplayName { get; set; }
 
     public String Title { get; set; }
 

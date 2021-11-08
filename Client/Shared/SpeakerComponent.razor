@@ -1,5 +1,7 @@
 
-<div class="speaker" @onclick="ShowBio">
+
+<div class="speaker">
+    <a href="/speaker/@Presenting.Name.Replace(" ","-")">
     <div>
         <h3>@Presenting.Name</h3>
         <p>@Presenting.Title</p>
@@ -7,7 +9,7 @@
     <div class="box">
         <img src="/img/DevNxt-vertical-logo-black.png" alt="conference logo" />
     </div>
-
+    </a>
             @if(DisplayBio){
             <div class="speaker-bio">
                 <SpeakerBio Speaker=Presenting />
