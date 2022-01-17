@@ -140,6 +140,8 @@ section.home > div { width: 50%; z-index: 2; }
 
 .sponsor { background-color: var(--platinum); border-radius: 3px; display: flex; flex-flow: column; max-width: 100%; justify-content: center; }
 .sponsor-boundary { max-width: 100%; padding: 0 1em; }
+.sponsor.tier-silver { grid-row: 1/2; }
+.sponsor.tier-standard { grid-row: 2/3; }
 .signatories { display: flex; justify-content: flex-end; gap: 2em; margin-right: 2em; }
 .signatories > p { font-weight: 500; }
 
