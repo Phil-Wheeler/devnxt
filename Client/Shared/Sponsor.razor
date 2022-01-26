@@ -1,8 +1,10 @@
 
-<div class="sponsor">
+<div class="sponsor tier-@Tier">
     <div class="sponsor-boundary">
-        <header></header>
-        <img src="/img/sponsor-logos/@Logo" alt="@Title logo" style="width: 100%;" />
+        <a href="@Url" target="_blank">
+            <header></header>
+            <img src="/img/sponsor-logos/@Logo" alt="@Title logo" style="width: 100%;" />
+        </a>
     </div>
 </div>
 
@@ -13,4 +15,6 @@
     public string Logo { get; set; }
     [Parameter]
     public string Tier { get; set; }
+    [Parameter]
+    public string Url { get; set; }
 }
