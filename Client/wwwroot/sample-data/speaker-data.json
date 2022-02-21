@@ -9,8 +9,8 @@
     }],
     "bio": "With over a decade of experience in software development and information security, Laura Bell specialises in bringing security into organisations of every shape and size. She is the founder and CEO of SafeStack Academy, a community-centric online education platform giving developers, testers and architects the skills they need to build high quality, secure software at speed. <br />Laura is an experienced conference speaker, trainer, and regular panel member, and has spoken at a range of events such as BlackHat USA, Velocity, and OSCON on the subjects of privacy, covert communications, agile security, and security mindset.<br /> She is also the co-author of Agile Application Security and Security for Everyone.",
     "talk": {
-      "title": "",
-      "abstract": "",
+      "title": "Team of 30 million, Reducing software vulnerability at a global scale",
+      "abstract": "<p>Facing a global pandemic has been (and continues to be) an incredibly challenging period. There are very few people who have not seen dramatic impacts on their lives as a result.</p><p>While we as humans have been facing this struggle, a similar problem has been emerging in our software development community. Not only are we finding more vulnerabilities in our software than ever, but those weaknesses have been affecting a larger proportion of our software ecosystem.Are there lessons we can take from the last few years and the changes we have made to protect people from a pandemic and apply them to our software ecosystem? I believe there are.</p>",
       "order": 1
     },
     "image": "/img/speakers/laura-bell.png"
@@ -41,8 +41,8 @@
     }],
     "bio": "Being the CEO of Animation Research Limited, one of Australasia's leading Computer Graphics production houses, seemed an unlikely career choice for Cheryl Adams when she was grubbing thistles on her parent's farm.  After all, she was going to be an accountant, until a calculus teacher suggested she'd get bored and advised her to head to engineering school.  Cheryl's journey from mechanical engineer through the energy sector and into award winning computer graphics, is a story of practical empathy, and proves the wisdom of her calculus teacher:  her life is far from boring. ",
     "talk": {
-      "title": "",
-      "abstract": "",
+      "title": "The greatest leader is the one that enables the people to do the greatest things.",
+      "abstract": "<p>I’m no tech person so will be keeping well away from how to run a lean dev ops team - instead will be talking about humble leadership (the only thing you can do when you don’t know anything about how your team do their job!)</p>",
       "order": 1
     },
     "image": "/img/speakers/cheryl-adams.jpg"
@@ -61,8 +61,8 @@
     }],
     "bio": "Lauren Peate is the CEO and founder of Multitudes, a tool for engineering leaders who care about culture. The product integrates with GitHub to provide insights and recommendations to build happier, higher-performing teams. Before founding Multitudes, she founded and ran a DEI consultancy called Ally Skills NZ, worked at Bain & Co with Fortune 500 tech companies in San Francisco, advised startups across the Middle East, and was a Fulbright Scholar in Morocco. Lauren studied economics with minors in Arabic and Human Biology at Stanford University.",
     "talk": {
-      "title": "",
-      "abstract": "",
+      "title": "Forget the 10x developer – focus on the 10x team",
+      "abstract": "<p>Research &amp; insights on why team players matter so much, and actions you can take to cultivate and support them</p>",
       "order": 1
     },
     "image": "/img/speakers/lauren-peate.jpg"
@@ -89,8 +89,8 @@
     }],
     "bio": "Reuben helps teams and organisations to apply better DevOps stories to build new software and product capabilities and is currently working with some fantastic people at Hypr (www.hypr.nz). Reuben is the founder and lead organiser of the DevOpsDaysNZ conference, with four highly successful events from 2016-2019 in Auckland & Wellington. Reuben lives in Auckland’s Rural South East with his wife, four kids, six sheep and two dogs, enjoys watching various sports, and has relished coaching his son’s rugby teams for the past ten years. You can reach him on the socials via his DefSol handle. Ngā Puhi/Ngati Pikiao/Tainui.",
     "talk": {
-      "title": "Prototype Your Life",
-      "abstract": "My topic is around a concept I call prototype your life – where you probe your peers currently in that role to see if it’s really what you think it is. Another dimension (unsure if this relates) is that skills obtained within the technical space may open previously unrelated roles/opportunities.",
+      "title": "What I want to be when I grow up?",
+      "abstract": "<p>When planning our career, we are somewhat pre-programmed towards a role. This session will present a  juxtaposition between being role oriented and what I call impact orientated. We’ll then look at some options on how we can decouple roles and impacts</p>",
       "order": 1
     },
     "image": "/img/speakers/reuben-dunn.jpg"
@@ -121,8 +121,8 @@
     }],
     "bio": "Ben has a couple of decades of experience building and running high-performance software engineering teams at places like Vend, Westpac, and Datacom. There's some evidence that his approach works to build strong, inclusive cultures. Ben also co-founded the Codemania software developer conference.",
     "talk": {
-      "title": "",
-      "abstract": "Gosh it's hard hiring and retaining great technical people in the current environment eh? I don't have any secret solutions, but I will share some specific tools and techniques have worked for me in the past; and also lean into some tough conversations around the work we need to do as leaders. Ideally this information will help you hire great people and implement an enduring culture in your engineering team.",
+      "title": "A Hypocritical Adventure",
+      "abstract": "<p>Follow the journey of a software engineer as they join, grow with, and eventually leave a high performance software engineering team.</p>",
       "order": 1
     },
     "image": "/img/speakers/ben-gracewood.jpg"
@@ -137,8 +137,8 @@
     }],
     "bio": "Rachel Collingridge is a classically trained musician who was accidentally drawn into software development in the late 1990s. After 18 years of crafting code, mainly for large UK institutions, she transitioned to a “post-technical” phase of engineering leadership at Powershop. She joined Xero in 2018. <br />Rachel believes engineer happiness is a key predictor of customer happiness and business success. Yet nurturing happiness requires more than espresso machines and high-res monitors! Rachel is motivated by creating environments built on coaching for growth, and modern DevOps practices; an environment where engineers can deliver high quality, relevant software both frequently and sustainably.<br /> Outside of the office she enjoys long trail runs with her husband and Jasper the rescue dog, spending time with her children before they fly the nest, and an occasional toot on a saxophone or clarinet.",
     "talk": {
-      "title": "",
-      "abstract": "",
+      "title": "Engineering happiness: beyond the espresso machine",
+      "abstract": "<p>A look under the hood of Accelerate and the State of DevOps reports. Let's go past the metrics which define elite teams, into the underlying principles and practices for excellent outcomes and happy engineers.</p>",
       "order": 1
     },
     "image": "/img/speakers/rachel-collingridge.jpg"
