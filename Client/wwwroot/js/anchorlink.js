@@ -24,44 +24,18 @@ window.anchorLink = {
 
 document.addEventListener('scroll', function(e) {
 
-    // var nav = document.getElementsByTagName("nav")[0];
+    var nav = document.getElementsByTagName("nav");
 
-    // if (!nav === undefined){
-    //     if (window.scrollY > 0){
-    //         nav.classList.add("scroll");
-    //     } else {
-    //         nav.classList.remove("scroll");
-    //     }
-    // }
-
-    var parent = document.getElementById('app');
-
-    if (parent.addEventListener) {
-        parent.addEventListener('scroll', handler, false);
-    }else if (parent.attachEvent) {
-        parent.attachEvent('scroll', handler);
+    if (window.scrollY > 0){
+        if (nav.length > 0){
+            nav[0].classList.add("scroll");
+            //console.info(window.scrollY);
+        }
     }
-    
-    function handler(e) {
-        console.log(e.elem);
-        if (e.target.id == 'test') {
-             // the button was clicked
+    else {
+        if (nav.length > 0){
+            nav[0].classList.remove("scroll");
         }
     }
 
 });
-
-var parent = document.getElementById('app');
-
-if (parent.addEventListener) {
-    parent.addEventListener('scroll', handler, false);
-}else if (parent.attachEvent) {
-    parent.attachEvent('onclick', handler);
-}
-
-function handler(e) {
-    console.log('scrolled');
-    if (e.target.id == 'test') {
-         // the button was clicked
-    }
-}
