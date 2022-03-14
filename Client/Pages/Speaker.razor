@@ -14,6 +14,12 @@
             <img src="@speaker.Image" />
         </figure>
         <p>@((MarkupString)speaker.Bio)</p>
+        <article>
+            <h3>
+                @talk.Title
+            </h3>
+            @((MarkupString)talk.Abstract)
+        </article>
     </div>
 </section>
 
@@ -26,6 +32,7 @@
     public string Name { get; set; }
 
     Presenter speaker = new Presenter();
+    Talk talk = new Talk();
 
 
     protected override async Task OnInitializedAsync()
@@ -34,6 +41,9 @@
         var speakers = await Http.GetFromJsonAsync<Presenter[]>("sample-data/speaker-data.json");
 
         speaker = speakers[Array.FindIndex(speakers, s => s.Name == Name.Replace("-"," "))];
+        talk = speaker.Talk ?? new Talk();
+
+        Console.WriteLine(talk.Title);
     }
 
 }

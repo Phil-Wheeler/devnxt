@@ -24,11 +24,18 @@ window.anchorLink = {
 
 document.addEventListener('scroll', function(e) {
 
-    var nav = document.getElementsByTagName("nav")[0];
+    var nav = document.getElementsByTagName("nav");
+
     if (window.scrollY > 0){
-        nav.classList.add("scroll");
-    } else {
-        nav.classList.remove("scroll");
+        if (nav.length > 0){
+            nav[0].classList.add("scroll");
+            //console.info(window.scrollY);
+        }
+    }
+    else {
+        if (nav.length > 0){
+            nav[0].classList.remove("scroll");
+        }
     }
 
 });
