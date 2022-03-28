@@ -153,7 +153,8 @@ footer { color: var(--platinum); display: flex; justify-content: space-around; }
 table { border-collapse: collapse; font: 300 1em/1.1 "Montserrat"; }
 table.agenda thead th { background-color: var(--tan); color: var(--platinum); font-weight: 500;
   font-size: 0.92em; text-transform: uppercase; padding: 0.75em 0.5em; }
-table.agenda tbody td { background-color: hsla(28.1, 47.1%, 60%, 0.33); font-size: 0.8em; padding: 0.9em 0.5em; }
+table.agenda tbody td { background-color: hsla(28.1, 47.1%, 60%, 0.33); color: var(--platinum); font-size: 0.8em; padding: 0.9em 0.5em; }
+table.agenda tbody td:first-of-type { font-weight: 500; }
 table.agenda tbody tr:nth-child(2n+1) td { background-color: var(--orange);}
 
 .speaker-bio { position: fixed;
