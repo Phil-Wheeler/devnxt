@@ -5,14 +5,14 @@ h1, .h1 { font: 500 2em/1.4 'Montserrat', sans-serif; }
 h2, .h2 { font: 500 1.33em/1.4 'Montserrat', sans-serif; }
 h3, .h3 { font: 300 1.2em/1.25 'Montserrat', sans-serif; }
 
-p, ul, li, blockquote, label, input, textarea { font: 300 0.82em/1.4 'Montserrat', sans-serif; }
+p, ul, li, blockquote, label, input, textarea { font: 300 0.9em/1.4 'Montserrat', sans-serif; }
 li { font-size: unset; }
 a { color: var(--orange); font: inherit; text-decoration: none; }
 footer a { color: inherit; }
 
 .speaker h3 { color: var(--platinum); font-weight: normal;}
 
-.byline { color: var(--platinum); font-size: 1.4em; font-weight: 500; }
+.byline { color: var(--orange); font-size: 1.4em; font-weight: 500; }
 
 
 
@@ -78,7 +78,7 @@ p.strip {
 header { z-index: 2; }
 section.home > header { margin-top: 4em; text-align: center; z-index: 2; }
 section.home > div { width: 50%; z-index: 2; }
-.tagline { background: transparent url('/img/home-bg.jpg') no-repeat 50% 0%; background-size: cover; background-attachment: fixed; opacity: 0.9; }
+.tagline { background: transparent url('/img/home-bg.jpg') no-repeat 50% 0%; background-size: cover; background-attachment: fixed; height: 480px; opacity: 0.9; }
 
 .bg-img-2::before { align-items: center; background: transparent url('/img/home-bg-2.jpg') no-repeat 50% 0%; background-size: cover; content: ''; height: 100%; opacity: 0.25; position: absolute; width: 100%; z-index: 1; }
 .bg-img-4::before { align-items: center; background: transparent url('/img/home-bg-4.jpg') no-repeat 50% 0%; background-size: cover; content: ''; height: 100%; opacity: 0.25; position: absolute; width: 100%; z-index: 1; }
@@ -149,7 +149,7 @@ footer { color: var(--platinum); display: flex; justify-content: space-around; }
 .speaker a { color: var(--black); }
 
 
-.topic-grid { display: grid;  grid-template-columns: 3fr 2fr;  gap: 1em; }
+.topic-grid { display: grid;  grid-template-columns: 3fr 2fr; gap: 1em; margin-bottom: 3rem; }
 table { border-collapse: collapse; font: 300 1em/1.1 "Montserrat"; }
 table.agenda thead th { background-color: var(--tan); color: var(--platinum); font-weight: 500;
   font-size: 0.92em; text-transform: uppercase; padding: 0.75em 0.5em; }
@@ -178,6 +178,8 @@ table.agenda tbody tr:nth-child(2n+1) td { background-color: var(--orange);}
   border: 1px solid var(--opal-t);
   padding: 0.5em;
   margin-left: 1em; }
+
+  .venue-map { border: 1px solid var(--opal); }
 
 
 .animated { animation-duration: 1.33s; animation-fill-mode: both; animation-iteration-count: 10; }
@@ -224,7 +226,7 @@ table.agenda tbody tr:nth-child(2n+1) td { background-color: var(--orange);}
 
 
 @media screen and (max-width: 438.95px) {
-    .page { grid-auto-rows: minmax(min-content, 67vh) auto minmax(min-content, auto); }
+    .page { grid-auto-rows: minmax(min-content, 67vh) auto minmax(min-content, auto); grid-template-rows: unset; }
     .speaker-grid { grid-template-columns: 82%; gap: 1em; justify-content: center; grid-template-rows: repeat(8, minmax(320px, 1fr)) }
     .with-motif::before { right: 1.67em !important; }
 
@@ -238,6 +240,8 @@ table.agenda tbody tr:nth-child(2n+1) td { background-color: var(--orange);}
     .cta { gap: 0.25em; }
     .cta .button { font-size: 0.76em; padding: 0.65em 0.95em; }
 
+    .topic-grid { grid-template-columns: 1fr; }
+
 
     .speaker { width: 100%; }
     .speaker .box { width: 40%; }
@@ -245,5 +249,6 @@ table.agenda tbody tr:nth-child(2n+1) td { background-color: var(--orange);}
     .speaker-bio { position: fixed; z-index: 5; }
     .at-top-for-small { position: absolute; top: 0.5em; left: 0.5em; font-size: 0.8em; }
 
+    .longform-text img { width: 100%; }
     .wordy { columns: inherit; }
 }
