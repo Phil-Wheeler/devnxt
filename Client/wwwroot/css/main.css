@@ -17,7 +17,7 @@ footer a { color: inherit; }
 
 
 /* ====== STRUCTURE ====== */
-.page { display: grid; grid-auto-flow: row; grid-auto-rows: minmax(60vh, min-content); }
+.page { display: grid; grid-auto-flow: row; grid-auto-rows: minmax(40vh, min-content); grid-template-rows: minmax(60vh, min-content); }
 .speaker-grid { display: grid; justify-items: center; gap: 1em 2em; grid-template-columns: repeat(4, minmax(200px, 1fr)); grid-template-rows: repeat(2, minmax(320px, 1fr)); margin: 0 auto; max-width: 82%; min-width: 67%; }
 
 nav { background-color: transparent; position: fixed; top: 0; width: 100%; z-index: 3; transition: background-color 1.25s linear; }
