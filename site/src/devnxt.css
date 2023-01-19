@@ -1,3 +1,6 @@
+body > main { padding-top: 2rem; }
+.grid { gap: 2rem; }
+
 
 /* --- TYPOGRAPHY --- */
 
@@ -15,6 +18,10 @@ h2, .h2 { margin-bottom: 1.25rem; }
 h2 a, .h2 a { color: inherit; text-decoration: none; }
 a:is([aria-current],:hover,:active,:focus) { text-decoration: unset; }
 
+
+main > header { padding-bottom: 2rem; }
+header figure { margin: 0; max-height: 3rem; }
+header nav { align-items: center; margin-right: 4rem; }
 
 .splash-wrapper { background-image: url('img/devnxt-2022-audience.png'); background-size: cover; }
 .splash.grid { grid-template-columns: 1fr repeat(6, 3fr) 1fr; grid-template-rows: 8.33vh repeat(6, 15.278vh); gap: 0.5rem; }
@@ -39,6 +46,10 @@ a:is([aria-current],:hover,:active,:focus) { text-decoration: unset; }
 .bg-orange { background-color: var(--orange); color: var(--platinum); }
 .bg-platinum { background-color: var(--platinum); }
 .bg-dark { background-color: var(--range-thumb-hover-color); color: var(--platinum); }
+.bg-tan { background-color: var(--tan); color: var(--platinum); }
+.cardless { box-shadow: none; }
+
+.band { min-height: 280px; margin-bottom: -220px; }
 
 .quote-strip { align-items: center; display: flex; font-size: 150%; justify-content: center; min-height: 300px; padding: 2rem 8rem; }
 .quote-strip > * { font-size: inherit; }
@@ -62,9 +73,11 @@ a:is([aria-current],:hover) article:hover { background-color: var(--opal); }
 /* --- IMAGES AND MEDIA --- */
 figure { height: 100%; width: 100%; }
 figure img { height: inherit; object-fit: cover; }
+.frame { align-items: center; display: flex; height: unset; justify-content: center; margin-bottom: 2rem; padding: 2.25rem; }
+.frame img { object-fit: unset; }
 .img-clip { clip-path: polygon(0% 0%, 33.5% 0%, 33.5% 20%, 67% 20%, 67% 40%, 100% 40%, 100% 60%, 67% 60%, 67% 80%, 33.5% 80%, 33.5% 100%, 0% 100%, 0% 80%, 20% 80%, 33% 80%, 33.5% 60%, 67% 60%, 67% 40%, 33.5% 40%, 33.5% 20%, 0% 20%) ; }
 
-.hero-strip { background-image: url('https://source.unsplash.com/QckxruozjRg'); background-attachment: fixed; background-size: cover; height: 280px; }
+.hero-strip { background-image: url('https://source.unsplash.com/QckxruozjRg'); background-attachment: fixed; background-size: cover; height: 340px; }
 
 
 /* ====== COLOURS ====== */
@@ -79,3 +92,27 @@ figure img { height: inherit; object-fit: cover; }
     --white: rgb(255, 255, 255);
 }
 .orange { color: var(--orange); }
+
+
+
+
+@media (max-width: 440px) {
+    .hide-for-small { display: none; }
+    .splash-wrapper { height: 60vh; }
+    .splash { align-content: flex-end; grid-template-columns: unset; grid-template-rows: unset; height: 100%; }
+    .splash > div { background-color: transparent; outline: none; padding: 0; }
+    .splash-wrapper .grid { align-items: flex-end; background-color: transparent; height: 100%; outline: none; }
+
+    .inline-image { float: left; max-height: 140px; margin-bottom: 1rem; margin-right: 1rem; }
+}
+  
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    .hide-for-large { display: none; }
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  /* Styles */
+}
