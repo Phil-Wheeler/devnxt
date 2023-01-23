@@ -7,17 +7,25 @@ body > main { padding-top: 2rem; }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .byline { font-family: 'Montserrat', sans-serif; }
 h1, .h1 { font-size: 220%; font-weight: 500; line-height: 1.4; }
 h2, .h2 { margin-bottom: 1.25rem; }
+h3, .h3 { font-size: 140%; font-weight: 500; line-height: 1.15; }
 
 .byline { position: relative; color: var(--platinum); }
 .column-break { columns: 2; column-gap: 10%; }
 .bg-dark > *, .bg-orange > * { color: inherit; }
 
+.splash article p { text-align: center; }
 .card { margin: calc(var(--block-spacing-vertical) / 2) auto; width: 80%; }
 .bricks article > p { font-size: 0.88rem; font-weight: 300; line-height: 1.45; } 
 
 h2 a, .h2 a { color: inherit; text-decoration: none; }
 a:is([aria-current],:hover,:active,:focus) { text-decoration: unset; }
+a:is([aria-current],:hover) article > * { text-decoration: none; } 
+a:is([aria-current],:hover) article:hover { background-color: var(--opal); } 
 
+.unstyled-list, .unstyled-list li { list-style: none; margin: 0; padding: 0; }
+ul.horizontal { align-items: center; display: flex; justify-content: space-evenly; }
+
+/* --- LAYOUT --- */
 
 main > header { padding-bottom: 2rem; }
 header figure { margin: 0; max-height: 3rem; }
@@ -26,11 +34,8 @@ header nav { align-items: center; margin-right: 4rem; }
 .splash-wrapper { background-color: var(--opal); }
 .splash.grid { grid-template-columns: 1fr 3fr; gap: 1.5rem; align-items: center; padding: 1rem 2rem; }
 
-.splash div:not(:first-child) { 
-    padding: 1rem 3rem;
-}
+.splash div:not(:first-child) { padding: 1rem 3rem; }
 
-.splash article p { text-align: center; }
 
 .bricks { grid-column-gap: 0; }
 .bricks article { border-radius: 0; box-shadow: none; height: 100%; margin: 0; transition: background-color 0.4s cubic-bezier(0.4, 0, 1, 1); }
@@ -49,9 +54,11 @@ header nav { align-items: center; margin-right: 4rem; }
 .pill[role=button] { font-size: 80%; border-radius: 1rem;
     padding: 0.2rem var(--form-element-spacing-horizontal); }
 
-a:is([aria-current],:hover) article > * { text-decoration: none; } 
-a:is([aria-current],:hover) article:hover { background-color: var(--opal); } 
 
+
+nav.main { background-color: var(--white); padding: 1.25rem 0; position: sticky; top: 0; }
+nav.main figure { max-height: 66px; margin: 0; }
+nav .nav-links { font-size: 0.92rem; gap: 1rem; justify-content: flex-end; }
 
 
 /* === timeline === */
