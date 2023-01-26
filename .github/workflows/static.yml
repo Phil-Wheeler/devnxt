@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      # url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,9 +34,10 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+        env:
+          api_token_github: ${{ secrets.api_token_github }}
         with:
-          # Upload entire repository
-          path: './site/'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+          # Upload repository "site" folder
+          source-directory: './site/'
+          destination-github-username: 'Phil-Wheeler'
+          destination-repository-name: 'devnxt.github.io'
