@@ -35,7 +35,7 @@ jobs:
       - name: Push to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          api_token_github: ${{ secrets.api_token_github }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           # Upload repository "site" folder
           source-directory: './site/'
